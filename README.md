@@ -1,1 +1,1 @@
-# SoftUni-Fundamentals-September-2022
+# SoftUni Programming Fundamentals With Python - September 2022
