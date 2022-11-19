@@ -1,47 +1,40 @@
 items_and_prices = input().split("|")
 budget = float(input())
-clothes_max_price = 50.00
-shoes_max_price = 35.00
-accessories_max_price = 20.50
+
+clothes_max = 50
+shoes_max = 35
+accessories_max = 20.50
 ticket_price = 150
-markup = 0.40  # покачва цената на стоката с 40 %
-new_items_price = []
-profit = 0
+items_prices = []
 
-for item in items_and_prices:
-    current_stock = item.split("->")
-    current_item = current_stock[0]
-    current_price = float(current_stock[1])
+for item_price in items_and_prices:
+    item_price = item_price.split("->")
+    item = item_price[0]
+    price = float(item_price[1])
 
-    if current_item == "Clothes":
-        if current_price <= clothes_max_price:
-            if budget - current_price >= 0:
-                budget -= current_price
-                sold_item_price = (current_price * markup) + current_price
-                new_items_price.append(round(sold_item_price, 2))
-                profit += sold_item_price - current_price
+    if "Clothes" in item:
+        if price <= clothes_max:
+            if budget - price >= 0:
+                budget -= price
+                items_prices.append(price)
+    elif "Shoes" in item:
+        if price <= shoes_max:
+            if budget - price >= 0:
+                budget -= price
+                items_prices.append(price)
+    elif "Accessories" in item:
+        if price <= accessories_max:
+            if budget - price >= 0:
+                budget -= price
+                items_prices.append(price)
 
-    elif current_item == "Shoes":
-        if current_price <= shoes_max_price:
-            if budget - current_price >= 0:
-                budget -= current_price
-                sold_item_price = (current_price * markup) + current_price
-                new_items_price.append(round(sold_item_price, 2))
-                profit += sold_item_price - current_price
+sold_prices = [f"{(x * 1.4):.2f}" for x in items_prices]
+profit = (sum(items_prices) * 1.4) - sum(items_prices)
+budget += (sum(items_prices) * 1.4)
 
-    elif current_item == "Accessories":
-        if current_price <= accessories_max_price:
-            if budget - current_price >= 0:
-                budget -= current_price
-                sold_item_price = (current_price * markup) + current_price
-                new_items_price.append(round(sold_item_price, 2))
-                profit += sold_item_price - current_price
-
-total = sum(new_items_price) + budget
-
-print(*new_items_price)
+print(*sold_prices)
 print(f"Profit: {profit:.2f}")
-if total >= ticket_price:
+if budget >= ticket_price:
     print("Hello, France!")
 else:
     print("Not enough money.")
