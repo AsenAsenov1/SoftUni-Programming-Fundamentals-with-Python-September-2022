@@ -1,6 +1,8 @@
 # SoftUni Programming Fundamentals with Python September 2022
 This repository contains my solutions for the tasks from the SoftUni course Programming Fundamentals with Python-September 2022.<br>
 https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022
+![image](https://user-images.githubusercontent.com/47159032/202854609-1e709a05-0c15-436d-93e5-c0a24673a092.png)
+
 
 ### Course details
 Course duration: 12 weeks<br>
