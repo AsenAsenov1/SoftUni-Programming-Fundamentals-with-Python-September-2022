@@ -6,7 +6,7 @@
 ### ![Certificate credentials](https://softuni.bg/certificates/details/148987/64341276)
 &nbsp;
 
-### ![Training program]( https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022)
+### ![Training program](https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022)
 
 
 ### ![Certificate](Certificate_Fundamentals.png)
