@@ -1,5 +1,5 @@
 # SoftUni Programming Fundamentals with Python September 2022
-![image](https://scontent.fsof10-1.fna.fbcdn.net/v/t1.15752-9/331757089_506576014944579_1342002429795582429_n.png?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=RdZVDYDcE_0AX9GZh6s&_nc_ht=scontent.fsof10-1.fna&oh=03_AdTCD-k3DsJoD6_9FlTiJudwMZ7-yUHJgMcd1Zbt2VhMAA&oe=64188DC6)
+![image](SoftUni-Logo-Flat.png)
 ## This repository contains my solutions for the tasks from the SoftUni course Programming Fundamentals with Python-September 2022.<br>
 ## [Training program](https://softuni.bg/trainings/3840/programming-fundamentals-with-python-september-2022)
 ## [Certificate credentials](https://softuni.bg/certificates/details/148987/64341276)
