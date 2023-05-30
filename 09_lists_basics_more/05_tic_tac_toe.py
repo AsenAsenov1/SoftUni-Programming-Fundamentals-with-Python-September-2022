@@ -67,7 +67,7 @@ def check_player_two(mtrx):
         diagonal = []
         for row in range(len(matrix1)):
             if matrix[row][row] == '2':
-                diagonal.append(matrix1[row][row])
+                diagonal.append('2')
         if len(diagonal) == 3:
             return True
             # print('3')
